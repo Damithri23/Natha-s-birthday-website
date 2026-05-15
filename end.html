@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Final Moment 💜</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<script src="music.js"></script>
+<body class="home-page">
+    <div class="hearts"></div>
+    <audio id="bgMusic" loop>
+  <source src="music/song.mp3" type="audio/mp3">
+</audio>
+
+  <div class="container">
+
+    <h1 class="title">Almost There 💜</h1>
+
+    <p class="subtitle">
+      This is not just a website... it’s a feeling ✨
+    </p>
+
+    <button class="start-btn" onclick="goToFinal()">
+      One Last Surprise 🎂
+    </button>
+
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+window.addEventListener("click", () => {
+  const music = document.getElementById("bgMusic");
+  if (music) {
+    music.volume = 0.5;
+    music.play();
+  }
+});
+</script>
+</body>
+</html>

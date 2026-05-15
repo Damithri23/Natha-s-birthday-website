@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>You're the prettiest joy of my life 💜</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<script src="music.js"></script>
+<body class="reason-page">
+    <div class="hearts"></div>
+    <audio id="bgMusic" loop>
+  <source src="music/song.mp3" type="audio/mp3">
+</audio>
+
+  <div class="letter-container">
+
+    <h1 class="glow-text">💜 Reasons You’re Special</h1>
+
+    <p class="glow-text-content">
+      • You make every moment better 💫<br>
+      • You are genuinely one of a kind 💜<br>
+      • You deserve all happiness ✨<br>
+      • You’re appreciated more than you know 💖<br>
+      • You are someone truly special 🌸
+    </p>
+
+    <button class="start-btn" onclick="goToEnd()">
+      Let’s Move Forward 💫
+    </button>
+
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+window.addEventListener("click", () => {
+  const music = document.getElementById("bgMusic");
+  if (music) {
+    music.volume = 0.5;
+    music.play();
+  }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Birthday 💜</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<script src="music.js"></script>
+<body class="home-page">
+    <div class="hearts"></div>
+    <audio id="bgMusic" loop>
+  <source src="music/song.mp3" type="audio/mp3">
+</audio>
+
+<script src="music.js"></script>
+
+  <div class="container">
+    <h1 class="title glow-text">Happy Birthday Panchii 💜</h1>
+    <p class="subtitle">A small surprise made with love just for youu ✨</p>
+
+    <button class="start-btn" onclick="goToLetter()">
+      Click to Begin 💫
+    </button>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+window.addEventListener("click", () => {
+  const music = document.getElementById("bgMusic");
+  if (music) {
+    music.volume = 0.5;
+    music.play();
+  }
+});
+</script>
+</body>
+</html>

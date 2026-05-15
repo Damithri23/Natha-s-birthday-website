@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Memories 💜</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<script src="music.js"></script>
+<body class="memory-page">
+    <div class="hearts"></div>
+    <audio id="bgMusic" loop>
+  <source src="music/song.mp3" type="audio/mp3">
+</audio>
+<script src="music.js"></script>
+
+  <div class="gallery-container">
+
+    <h1>📸 Our Memories</h1>
+
+    <div class="slider">
+      <img id="memoryImage" alt="memory">
+      <p id="caption"></p>
+    </div>
+
+    <button class="start-btn" onclick="nextMemory()">
+      Next Memory 💫
+    </button>
+
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+window.addEventListener("click", () => {
+  const music = document.getElementById("bgMusic");
+  if (music) {
+    music.volume = 0.5;
+    music.play();
+  }
+});
+</script>
+</body>
+</html>

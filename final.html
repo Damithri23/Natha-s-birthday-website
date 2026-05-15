@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday 💜</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+<script>
+setTimeout(() => {
+  confetti({
+    particleCount: 200,
+    spread: 100,
+    origin: { y: 0.6 }
+  });
+}, 500);
+</script>
+<script src="music.js"></script>
+<body class="home-page">
+    <div class="hearts"></div>
+<audio id="bgMusic" loop>
+  <source src="music/song.mp3" type="audio/mp3">
+</audio>
+  <div class="container">
+
+    <h1 class="title glow-text">Happy 23rd Birthday Natha 💜🎂</h1>
+
+    <p class="subtitle">
+      I love you ... always and forever ✨
+    </p>
+
+    <img src="images/image3.jpeg"
+         style="width:250px; border-radius:20px; margin-top:20px;
+                box-shadow:0 0 20px rgba(0,0,0,0.3);">
+
+    <p class="subtitle" style="margin-top:20px;">
+      I hope all your dreams come true 💫💜
+    </p>
+
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+window.addEventListener("click", () => {
+  const music = document.getElementById("bgMusic");
+  if (music) {
+    music.volume = 0.5;
+    music.play();
+  }
+});
+</script>
+</body>
+</html>

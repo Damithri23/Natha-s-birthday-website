@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Letter 💜</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<script src="music.js"></script>
+<body class="letter-page">
+    <div class="hearts"></div>
+    <audio id="bgMusic" loop>
+  <source src="music/song.mp3" type="audio/mp3">
+</audio>
+
+<script src="music.js"></script>
+
+  <div class="letter-container">
+
+    <h1>💌Small Letter for you </h1>
+
+    <p id="typedText"></p>
+
+    <div id="popup" style="opacity:0;">💜 You are special 💜</div>
+
+    <button class="start-btn" onclick="goNext()">
+      Continue 💫
+    </button>
+
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+window.addEventListener("click", () => {
+  const music = document.getElementById("bgMusic");
+  if (music) {
+    music.volume = 0.5;
+    music.play();
+  }
+});
+</script>
+</body>
+</html>
